@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="70" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="R3V-Ky-Ec1">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="9zl-bE-xoA"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="2" eventType="valueChanged" id="4s5-4l-37g"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="50kg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frp-nj-4r0">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="MKx-62-dl4"/>
+                                    <constraint firstAttribute="height" constant="90" id="kgv-4k-VdO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Weight" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXv-d5-sU6">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="44r-Fv-f6x"/>
+                                    <constraint firstAttribute="width" constant="109" id="rD8-ry-bfo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Height" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89d-Lb-pqx">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="Pkn-QI-Oqb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="168" minValue="121" maxValue="210" translatesAutoresizingMaskIntoConstraints="NO" id="xnz-yy-YPu">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="274" id="9rK-Qf-CFm"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="heightSlider:" destination="2" eventType="valueChanged" id="1rr-4U-8SK"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="161cm" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJm-sD-1yy">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="cSe-wG-RJa"/>
+                                    <constraint firstAttribute="width" constant="138" id="ccL-k9-X4t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="BMI:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9S-1c-6uC">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="You are FAT!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8wD-kD-Oco">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="206" id="AXp-gN-Fp3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="R3V-Ky-Ec1" firstAttribute="leading" secondItem="PXv-d5-sU6" secondAttribute="leading" type="default" id="4oW-cR-KBO"/>
+                            <constraint firstItem="PXv-d5-sU6" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="5lc-1P-VMb"/>
+                            <constraint firstAttribute="bottom" secondItem="uJm-sD-1yy" secondAttribute="bottom" constant="112" id="7gg-cW-Sgh"/>
+                            <constraint firstItem="89d-Lb-pqx" firstAttribute="top" secondItem="3" secondAttribute="top" constant="186" id="AwU-il-tJl"/>
+                            <constraint firstItem="v9S-1c-6uC" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="40" id="HGG-wI-TOg"/>
+                            <constraint firstItem="frp-nj-4r0" firstAttribute="top" secondItem="R3V-Ky-Ec1" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="N6R-Tq-o6d"/>
+                            <constraint firstItem="R3V-Ky-Ec1" firstAttribute="top" secondItem="PXv-d5-sU6" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="R7r-vs-n1s"/>
+                            <constraint firstItem="xnz-yy-YPu" firstAttribute="trailing" secondItem="frp-nj-4r0" secondAttribute="trailing" type="default" id="TgX-iV-jxh"/>
+                            <constraint firstItem="uJm-sD-1yy" firstAttribute="centerX" secondItem="xnz-yy-YPu" secondAttribute="centerX" type="default" id="WPt-th-k1G"/>
+                            <constraint firstAttribute="bottom" secondItem="xnz-yy-YPu" secondAttribute="bottom" constant="194" id="XIn-hN-Omj"/>
+                            <constraint firstItem="8wD-kD-Oco" firstAttribute="baseline" secondItem="v9S-1c-6uC" secondAttribute="baseline" type="default" id="ZyF-cc-pGk"/>
+                            <constraint firstItem="89d-Lb-pqx" firstAttribute="leading" secondItem="R3V-Ky-Ec1" secondAttribute="leading" type="default" id="eH8-Yg-caX"/>
+                            <constraint firstItem="xnz-yy-YPu" firstAttribute="leading" secondItem="89d-Lb-pqx" secondAttribute="leading" type="default" id="fdB-QJ-4eb"/>
+                            <constraint firstItem="8wD-kD-Oco" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="89" id="gl9-To-AoN"/>
+                            <constraint firstItem="frp-nj-4r0" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="27" id="hL7-wV-rUj"/>
+                            <constraint firstItem="89d-Lb-pqx" firstAttribute="trailing" secondItem="PXv-d5-sU6" secondAttribute="trailing" type="default" id="nIT-F3-3L1"/>
+                            <constraint firstAttribute="bottom" secondItem="v9S-1c-6uC" secondAttribute="bottom" constant="39" id="vw0-ot-7Ki"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="heightLabel" destination="uJm-sD-1yy" id="NAh-tA-tAT"/>
+                        <outlet property="myAwesomeSlider" destination="R3V-Ky-Ec1" id="eNv-eh-fNh"/>
+                        <outlet property="myBMI" destination="8wD-kD-Oco" id="sDm-HW-atY"/>
+                        <outlet property="myHeightSlider" destination="xnz-yy-YPu" id="D9E-2i-5pv"/>
+                        <outlet property="myLabel" destination="frp-nj-4r0" id="YgQ-eT-R1m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-551" y="-61"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="heightSlider:" candidateClass="UISlider"/>
+                <relationship kind="action" name="sliderChanged:"/>
+                <relationship kind="outlet" name="heightLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="myAwesomeSlider" candidateClass="UISlider"/>
+                <relationship kind="outlet" name="myBMI" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="myHeightSlider" candidateClass="UISlider"/>
+                <relationship kind="outlet" name="myLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
